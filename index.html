@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- Background Music -->
+<audio id="bgMusic" src="music/song.mp3"></audio>
+ 
+<!-- Landing Section -->
+<section class="section home">
+    <h1 id="typingText"></h1>
+    <p class="sub">A small surprise made just for you 💖</p>
+    <button onclick="startSurprise()">Start the Surprise 🎁</button>
+</section>
+ 
+<!-- Story Section -->
+<section class="section story" id="story">
+    <h2>Our Story 💕</h2>
+    <p>
+        From the moment you entered my life, everything changed.  
+        Every smile, every laugh, every little moment with you means the world to me.
+    </p>
+    <button onclick="goToMemories()">Next ➜</button>
+</section>
+ 
+<!-- Memories Section -->
+<section class="section memories" id="memories">
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+        <img src="images/pic1.jpg">
+        <img src="images/pic2.jpg">
+        <img src="images/pic3.jpg">
+    </div>
+    <button onclick="goToLetter()">One More Thing 💌</button>
+</section>
+ 
+<!-- Letter Section -->
+<section class="section letter" id="letter">
+    <h2>A Letter For You 💖</h2>
+    <p class="hidden" id="loveLetter">
+        Happy Birthday, my love ❤️  
+        You are my peace, my happiness, and my favorite person.  
+        I promise to stand by you, today and always.  
+        This is just one of many birthdays we’ll celebrate together 💫
+    </p>
+    <button onclick="revealLetter()">Reveal Message ✨</button>
+</section>
+ 
+<!-- End Section -->
+<section class="section end">
+    <h2>Forever & Always ♾️</h2>
+    <p>Thank you for being you. I love you ❤️</p>
+</section>
+ 
+<script src="script.js"></script>
+</body>
+</html>
