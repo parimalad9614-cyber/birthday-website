@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday ❤️</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Background Music -->
 <audio id="bgMusic" src="music/song.mp3" loop></audio>
 
+<!-- Home Section -->
 <section class="section home">
     <div class="card">
         <h1 id="typingText"></h1>
@@ -17,52 +20,69 @@
     </div>
 </section>
 
+<!-- Story Section -->
 <section class="section story" id="story">
     <div class="card">
         <h2>Our Story 💕</h2>
         <p class="story-text">
-            It all started with a LinkedIn message…<br><br>
-            <em>“It started with a LinkedIn message… and turned into a lifetime connection.”</em>
+            It all started with a LinkedIn message after I watched your honest interview.
+            You guided me, supported me, and helped me reach my goal.
+            Somewhere between guidance and conversations, motivation and late replies,
+            we became friends. And one fine day, without even realizing it,
+            friendship turned into love.
+            <br><br>
+
+            A message became conversations,<br>
+            Guidance became care,<br>
+            Dreams became achievements,<br>
+            And careers led our hearts together. ✨💞
+            <br><br>
+
+            <em>"It started with a LinkedIn message… and turned into a lifetime connection. 💫❤️"</em>
         </p>
         <button onclick="goToMemories()">Next ➜</button>
     </div>
 </section>
 
+<!-- Memories Section -->
 <section class="section memories" id="memories">
     <div class="card">
         <h2>Our Memories 📸</h2>
-
         <div class="gallery">
-            <img src="./images/moon.jpeg" alt="Moon">
-            <img src="./images/park-happy.jpeg" alt="Park Happy">
-            <img src="./images/park-shoulder.jpeg" alt="Park Shoulder">
-            <img src="./images/park-head.jpeg" alt="Park Head">
-            <img src="./images/shopping-mall.jpeg" alt="Shopping Mall">
-            <img src="./images/diwali.png" alt="Diwali">
+            <img src="./images/dewali.png" alt="Diwali" onerror="this.style.display='none'">
+            <img src="./images/happy.jpeg" alt="Happy Moment" onerror="this.style.display='none'">
+            <img src="./images/mall.jpeg" alt="Shopping Mall" onerror="this.style.display='none'">
+            <img src="./images/moon.jpeg" alt="Moon Pic" onerror="this.style.display='none'">
+            <img src="./images/park-head.jpeg" alt="Park Head" onerror="this.style.display='none'">
+            <img src="./images/sholder.jpeg" alt="Park Shoulder" onerror="this.style.display='none'">
         </div>
-
         <button onclick="goToLetter()">One More Thing 💌</button>
     </div>
 </section>
 
+<!-- Letter Section -->
 <section class="section letter" id="letter">
     <div class="card letter-card">
         <h2>A Letter For You 💖</h2>
         <p id="loveLetter" class="hidden">
             Happy Birthday, my love ❤️<br><br>
-            You are my peace and happiness 💫
+            You are my peace, my happiness, and my favorite person.<br>
+            I promise to stand by you, today and always.<br><br>
+            This is just one of many birthdays we'll celebrate together 💫
         </p>
         <button onclick="revealLetter()">Reveal Message ✨</button>
     </div>
 </section>
 
+<!-- End Section -->
 <section class="section end">
     <div class="card end-card">
         <h2>Forever & Always ♾️</h2>
-        <p>I love you ❤️</p>
+        <p>Thank you for being you. I love you ❤️</p>
     </div>
 </section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
